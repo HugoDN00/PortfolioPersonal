@@ -1,0 +1,121 @@
+/*Estilo comun para los html*/
+/*001*/
+body{/*Estilo basico del cuerpo de todos los html*/
+    padding: auto;
+    color: black;
+    background-color: rgb(249, 191, 227);
+}
+/*001*/
+a{/*Estilo comun para los hipervinculos*/
+    color: black;
+    font-family: 'Lucida Sans Unicode';
+}
+/*001*/
+h1{/*Estilo comun para los diferentes tipos de encabezados principales*/
+    text-align: justify;
+    font-family: Georgia;
+    margin: 0.75em;
+    font-size: 3em;
+}
+/*001*/
+h2{/*Estilo comun para los encabezados secundarios*/
+    text-align: justify;
+    font-family: Georgia;
+    margin: 0.75em;
+    font-size: 1.5em;
+}
+/*--------------------------------------------------*/
+/*Estilo de index.html*/
+/*100*/
+#fabada{/*Estilo de la imagen de la fabada*/
+    width: 35em;
+    height: 25em;
+    margin:2em;
+}
+/*100*/
+#pIndex{/*Estilo del parrafo del index*/
+    font-family:sans-serif;
+    text-align: justify;
+    margin: 2em;
+}
+/*----------------------------------------------------*/
+/*Estilo de pasos.html*/
+/*100*/
+#videoF{/*Estilo del video*/
+    width: 60em;
+    height: 40em;
+    margin: 1em;
+}
+/*010*/
+.pasosP{/*Estilo de un par de parrafos sueltos que hay en pasos.html*/
+    font-family:sans-serif;
+    text-align: justify;
+    font-size: 1em;
+    margin: 2em;
+}
+/*010*/
+.consideraciones{/*Estilo para la parte de consideraciones*/
+    font-family:sans-serif;
+    text-align: justify;
+    font-size: 0.9em;
+    margin-top: 0.75em;
+}
+/*010*/
+.preparacion{/*Estilo para como se prepara*/
+    font-family:sans-serif;
+    text-align: justify;
+    font-size: 0.9em;
+    margin-top: 0.75em;
+}
+/*010*/
+.coccion{/*Estilo de la preparacion final*/
+    font-family:sans-serif;
+    text-align: justify;
+    font-size: 0.9em;
+    margin-top: 0.75em;
+}
+/*-----------------------------------------------------------------------------*/
+/*Estilo de contacto.html*/
+/*001*/
+form{/*Estilo del form*/
+    font-family: Georgia;
+    text-align: justify;
+    font-size: 0.9em;
+    margin-top: 0.75em;
+    margin: 1em;
+}
+/*001*/
+button{/*Estilo del boton*/
+    margin: 1em;
+    background-color: black;
+    color: white;
+    height: 4em;
+    width: 13em;
+
+}
+/*-----------------------------------------------------------------------------------------*/
+/*Estilo de ingredientes.html*/
+/*100*/
+#pIngre{/*Estilo del parrafo de ingredientes.html*/
+    font-family:sans-serif;
+    text-align: justify;
+    margin: 2em;
+}
+#uIngre{/*Estilo de la lista desordenada de ingredients.html*/
+    /*100*/
+    text-align: justify;
+    font-family: monospace;
+    margin: 1em;
+}
+/*-------------------------------------------------------------------------------------------------*/
+/*Estilo diversos ingredientes*/
+/*001*/
+img{/*Estilo de las imagenes de los ingredientes*/
+    margin: 2em;
+}
+/*010*/
+.pIngres{/*Estilo de los parrafos de los ingredientes*/
+    font-family:sans-serif;
+    text-align: justify;
+    margin: 2em;
+}

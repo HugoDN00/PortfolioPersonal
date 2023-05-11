@@ -1,0 +1,62 @@
+/*(100)*/
+.imagenFormacion{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: black 8px solid;
+    background-color: black;
+}
+/*(100)*/
+#contenedorInstituto{
+    height: auto;
+    margin: 5px;
+}
+/*(100)*/
+#contenedorInformatica{
+    height: auto;
+    margin: 5px;
+}
+/*(100)*/
+#contenedorAfa{
+    height: auto;
+    margin: 5px;
+}
+/*(100)*/
+.contenedorFormacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    width: 100%;
+}
+.formacion{
+    text-align: center;
+}
+.formacion h3 {
+    font-size: medium;
+    color: white;
+}
+h2 {
+    color: white;
+}
+.formacion p{
+    font-size: small;
+    color: white;
+}
+/*TABLET*/
+@media screen and (min-width:600px) and (max-width:900px) {
+    .contenedorFormacion{
+        flex-direction: row;
+    }
+}
+/*DESKTOP*/
+@media screen and (min-width:901px){
+    .contenedorFormacion{
+        flex-direction: row;
+    }
+    .imagenFormacion{
+        width: 240px;
+        height: 240px;
+    }
+}

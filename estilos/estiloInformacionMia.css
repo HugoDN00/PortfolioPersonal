@@ -1,0 +1,107 @@
+/*(100)*/
+#contenedorCuerpoGeneral{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding-top: 68px;
+}
+/*(010)*/
+.contenedorInformacionMia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: 24px;
+}
+/*(100)*/
+#informacionMia1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+/*(100)*/
+#personalidad{
+    display: inline-block;
+    text-align: center;
+    padding: 8px;
+    background-color: rgb(43, 72, 168);
+    border: black 4px solid;
+    border-radius: 70px;
+    width: 75%;
+}
+/*(101)*/
+#personalidad p{
+    word-wrap: normal;
+    white-space: normal;
+    margin: 8px
+}
+/*(100)*/
+#informacionMia2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+/*(100)*/
+#informacionContacto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(43, 72, 168);
+    border: black 4px solid;
+    border-radius: 70px;
+    padding: 8px;
+    width: 75%;
+}
+/*(101)*/
+#informacionContacto ul{
+    margin: 8px;
+    list-style: none;
+}
+.contenedorInformacionMia h2{
+    color: white;
+}
+.contenedorInformacionMia p{
+    color: white;
+}
+.contenedorInformacionMia li{
+    color: white;
+}
+#co1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+/*TABLET*/
+@media screen and (min-width:600px) and (max-width:900px) {
+    #co1{
+        flex-direction: row;
+    }
+    #personalidad{
+        max-width: 260px;
+    }
+    #informacionContacto{
+        max-width: 260px;
+    }
+}
+/*DESKTOP*/
+@media screen and (min-width:901px){
+    #co1{
+        flex-direction: row;
+    }
+    #personalidad{
+        max-width: 340px;
+    }
+    #informacionContacto{
+        max-width: 340px;
+    }
+}

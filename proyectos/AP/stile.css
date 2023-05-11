@@ -1,0 +1,1196 @@
+/*ESTILO MOBILE*/
+/*GENERAL*/
+/*(000)*/
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*(001)*/
+/* Modificado por Joseph para arreglar posicion del texto tanto de la seccion 2 y 4 */
+.textoSection2 h2 {
+    text-align: center;
+    font-size: large;
+}
+
+.textoSection4 h2 {
+    text-align: center;
+    font-size: large;
+}
+
+.textoSection2 p {
+    text-align: center;
+    font-size: large;
+}
+
+.textoSection4 p {
+    text-align: center;
+    font-size: large;
+}
+
+/*(001)*/
+
+
+/*ESTILO BARRA NAVEGACION*/
+/*(010)*/
+.headerGeneral {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(223 59 59);
+    padding: 0 0.2rem;
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+}
+
+/*(010) logo*/
+.logoMain {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    text-decoration: none;
+}
+
+/*(010) contenedor de la barra en modo telefono*/
+.navGeneral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    margin-left: 100%;
+    transition: all .2s linear;
+    z-index: 100;
+}
+
+/*(020)*/
+.navGeneral.show {
+    margin-left: 0;
+}
+
+/*(010)*/
+.navLinks {
+    background-color: rgb(223 59 59);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/*(010)*/
+.linkItem {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    position: center;
+}
+
+/*(011)*/
+.linkItem::after {
+    position: absolute;
+    content: "";
+    background-color: rgb(255, 255, 255);
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    transition: 0.3s ease all;
+}
+
+/*(021)*/
+.linkItem:hover::after {
+    width: 100%;
+}
+
+/*(010) Boton*/
+.botonMenu {
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    background: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 11px;
+
+}
+
+/*(011)*/
+.botonMenu span {
+    width: 37px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    transform-origin: 4px 0px;
+    transition: all .2s linear;
+}
+
+/*(021)*/
+.botonMenu.close span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 0px);
+    background: #ffffff;
+}
+
+/*(031)*/
+.botonMenu.close span:nth-child(2) {
+    transform: rotate(-45deg) translate(-8px, 5px);
+}
+
+/*(031)*/
+.botonMenu.close span:nth-child(3) {
+    display: none;
+}
+
+/*FIN BARRA NAVEGACION*/
+/*ESTILO BANNER*/
+/*(010)*/
+.banner {
+    width: 100%;
+    height: 377px;
+    animation: banner 30s infinite linear alternate;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+/* Se usara un @keypara la creacion de las transiciones de imagenes */
+@keyframes banner {
+
+    0%,
+    20% {
+        background-image: url(./imgs/pueblo.jpg);
+    }
+
+    25%,
+    45% {
+        background-image: url(./imgs/desiertodecolores.jpg);
+    }
+
+    50%,
+    70% {
+        background-image: url(./imgs/machupichu.jpg);
+    }
+
+    75%,
+    100% {
+        background-image: url(./imgs/pueblerino.jpg);
+    }
+}
+
+/* Fin del @keyframe */
+/*(010) crea una capa oscura transparente enfrente de la imagen */
+.capa {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* fin de capa */
+/*(010) Style de texto */
+.informacionBanner {
+    z-index: 1;
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+}
+
+/* Fin de Style de texto */
+/*(011)*/
+.informacionBanner h1 {
+    color: #fff;
+    font-size: 45px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/*(011)*/
+.informacionBanner p {
+    color: #c7c7c7;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/*(011)*/
+.informacionBanner a {
+    color: #fff;
+    text-decoration: none;
+    background: rgb(223 59 59);
+    padding: 16px 37px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+/*FIN ESTILO BANNER*/
+/*ESTILO SECCION 1*/
+/*(010) espacio*/
+.containerSection1 {
+    margin: 79px 30px;
+}
+
+/*(011) estilo de h2*/
+.containerSection1 h2 {
+    margin: 5px 5px 15px;
+    font-size: 45px;
+    text-align: center;
+}
+
+/*(010) altura y espacios entre la etiqueta cuadro*/
+.containerSection1Cuadro {
+    height: auto;
+    margin: 9px;
+    width: 50%;
+    border: rgb(223 59 59) solid 2px;
+    border-radius: 14px;
+    padding: 5px;
+}
+
+/*(010)*/
+.containerSection1Cuadros {
+    display: flex;
+    flex-direction: column;
+}
+
+/*(010) flex del cuadro1*/
+.containerSection1Parte1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*(010) flex del cuadro2*/
+.containerSection1Parte2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*(010) Creacion de los margin para la espacio entre cada etiqueta*/
+.containerSection1Info {
+    margin: 10px;
+}
+
+/*(011) tamaño del font*/
+.containerSection1Info h3 {
+    font-size: 22px;
+}
+
+/*(011)*/
+.containerSection1Info p {
+    font-size: 18px;
+}
+
+/*(011) creacion de los espacios entre las etiquetas */
+.containerSection1Info h3,
+p,
+button {
+    margin: 5px 0px 15px;
+}
+
+/*(010) estilo del boton */
+.button {
+    background-color: white;
+    border: rgb(223 59 59) 2px solid;
+    border-radius: 10px;
+    margin: 8px;
+    padding: 6px 19px;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(223 59 59);
+
+}
+
+/*(020) creacion del hover para los botones */
+.button:hover {
+    background-color: rgb(223 59 59);
+    color: white;
+}
+
+/*(021)*/
+.containerSection2Info a:hover {
+    color: white;
+}
+
+/*FIN ESTILO SECCION 1*/
+/*ESTILO SECCION 2*/
+/*(010) espacio y flex*/
+.containerSection2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245 174 174);
+    padding: 20px;
+}
+
+/*(010)*/
+.textoSection2 {
+    text-align: center;
+}
+
+/*010*/
+.imagenSection2 {
+    height: auto;
+    margin: 5px;
+}
+
+/*011*/
+.imagenSection2 img {
+    width: 326px;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*FIN ESTILO SECCION 2*/
+/*ESTILO SECCION 3*/
+.containerSection3{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 15px;
+}
+.section3Card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+.section3CardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .section3Card{
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+  }
+  .section3Card p{
+    word-wrap: normal;
+    white-space: normal;
+  }
+/*FIN ESTILO SECCION 3*/
+/*ESTILO SECCION 4*/
+.containerSection4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245 174 174);
+    padding: 20px;
+}
+
+/*(010)*/
+.textoSection4 {
+    text-align: center;
+}
+
+/*010*/
+.imagenSection4 {
+    height: auto;
+    margin: 5px;
+}
+
+/*011*/
+.imagenSection4 img {
+    width: 326px;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*FIN ESTILO SECCION 4*/
+/*ESTILO SECCION 5*/
+.containerSection5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.seccion5Imagenes {
+    margin: 15px;
+}
+
+.seccion5Imagenes img {
+    width: 350px;
+    height: 250px;
+
+}
+
+.seccion5Info {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    overflow: auto;
+}
+
+/*FIN ESTILO SECCION 5*/
+/*ESTILO SECCION 6*/
+/*(010)*/
+.suscripcion {
+    background-color: rgb(245 174 174);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+    padding: 20px;
+}
+
+/*(010)*/
+.suscripcionTexto {
+    text-align: center;
+    font-size: 24px;
+}
+
+/*(010)*/
+.suscripcionBoton {
+    display: flex;
+    flex-direction: column;
+}
+
+/*(011) botones */
+.suscripcionBoton button {
+    width: 135px;
+    height: 45px;
+    border: rgb(223 59 59) 2px solid;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+/*(012)*/
+.suscripcionBoton button a {
+    margin: 20px;
+    text-decoration: none;
+}
+
+/*(010) estilo boton1*/
+.boton1 {
+    background-color: white;
+}
+
+.suscripcionBoton button:hover {
+    background-color: rgb(223 59 59);
+}
+
+.suscripcionBoton button:hover a {
+    color: white;
+}
+
+/*(011)*/
+.boton1 a {
+    color: rgb(223 59 59);
+}
+
+/*fin estilo boton1*/
+/*fin botones*/
+/*FIN ESTILO SECCION 6*/
+/*ESTILO FOOTER*/
+/*(001) edicion general de footer */
+footer {
+    background-color: rgb(223 59 59);
+    height: auto;
+    width: 100%;
+    font-size: 24px;
+    padding-top: 40px;
+    color: white;
+    margin-top: auto;
+
+}
+
+/*(001) estilo tanto del logo como las partes de la pagina */
+.barraFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 20px 20px 0;
+
+}
+
+/*(011)*/
+.barraFooter h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+/*(011)*/
+.barraFooter1 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*(011)*/
+.barraFooter1 li {
+    text-align: center;
+}
+
+/*(011)*/
+.barraFooter2 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*(011)*/
+.barraFooter2 li {
+    text-align: center;
+}
+
+/*(010) estilo de los iconos */
+.redesSociales {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+/*(011)*/
+.redesSociales li {
+    margin: 0 10px;
+}
+
+/*(011) efecto al pasar el mouse*/
+.redesSociales a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+/*(022)*/
+.redesSociales a:hover i {
+    color: aqua;
+}
+
+/*(010) stule de la parte de copyright */
+.footerFinal {
+    background: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/*(011)*/
+.footerFinal p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+/*(010)*/
+.barraFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*(100)*/
+#peruino {
+    margin: 15px;
+}
+
+/*FIN ESTILO FOOTER*/
+/*MEDIAQUERYS PARA TABLET*/
+@media screen and (min-width:600px) and (max-width:991px) {
+
+    /*ESTILO BARRA NAVEGACION*/
+    /*(010)*/
+    .botonMenu {
+        z-index: 200;
+        width: 40px;
+        height: 40px;
+        border: none;
+        display: flex;
+        background: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-right: 11px;
+
+    }
+
+    /*(011)*/
+    .botonMenu span {
+        width: 37px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #ffffff;
+        border-radius: 3px;
+        transform-origin: 4px 0px;
+        transition: all .2s linear;
+    }
+
+    /*(021)*/
+    .botonMenu.close span {
+        opacity: 1;
+        transform: rotate(45deg) translate(0px, 0px);
+        background: #ffffff;
+    }
+
+    /*(031)*/
+    .botonMenu.close span:nth-child(2) {
+        transform: rotate(-45deg) translate(-8px, 5px);
+    }
+
+    /*(031)*/
+    .botonMenu.close span:nth-child(3) {
+        display: none;
+    }
+
+
+    /*FIN BARRA NAVEGACION
+    /*ESTILO BANNER*/
+    /*(010)*/
+    .banner {
+        width: 100%;
+        height: 400px;
+        animation: banner 30s infinite linear alternate;
+        background-size: 100% 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*FIN BANNER*/
+    /*SECCION 1*/
+    /*(001)*/
+    footer {
+        margin-top: auto;
+    }
+
+    /*(010) flex del cuadro1*/
+    .containerSection1Parte1 {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    /*(010) flex del cuadro2*/
+    .containerSection1Parte2 {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    /*FIN SECCION 1*/
+    /*ESTILO SECCION 2*/
+    .textoSection2 h2 {
+        text-align: center;
+        font-size: large;
+    }
+
+    .textoSection4 h2 {
+        text-align: start;
+        font-size: large;
+    }
+
+    .textoSection2 p {
+        text-align: end;
+        font-size: large;
+    }
+
+    .textoSection4 p {
+        text-align: start;
+        font-size: large;
+    }
+
+    /*(010) espacio y flex*/
+    .containerSection2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(245 174 174);
+        padding: 20px;
+    }
+    .containerSection4 h2{
+        text-align: center;
+    }
+    /*(010)*/
+    .textoSection2 {
+        text-align: center;
+        margin: 15px;
+    }
+
+    /*010*/
+    .imagenSection2 {
+        height: auto;
+        margin: 15px;
+
+    }
+
+    /*011*/
+    .imagenSection2 img {
+        width: 400px;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*FIN ESTILO SECCION 2*/
+    /*ESTILO SECCION 3*/
+    .containerSection3{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 15px;
+    }
+    .section3Card img{
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+    }
+    .section3CardContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .section3Card{
+        text-align: center;
+        display: inline-block;
+        padding: 20px;
+      }
+      .section3Card p{
+        word-wrap: normal;
+        white-space: normal;
+      }
+    /*FIN ESTILO SECCION 3*/
+    /*ESTILO SECCION 4*/
+    .containerSection4 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(245 174 174);
+        padding: 20px;
+    }
+
+    /*(010)*/
+    .textoSection4 {
+        text-align: center;
+        margin: 15px;
+    }
+
+    /*010*/
+    .imagenSection4 {
+        height: auto;
+        margin: 15px;
+    }
+
+    /*011*/
+    .imagenSection4 img {
+        width: 400px;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*FIN ESTILO SECCION 4*/
+    /*ESTILO SECCION 5*/
+    .containerSection5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .seccion5Imagenes {
+        margin: 15px;
+    }
+
+    .seccion5Info {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+        overflow: auto;
+    }
+
+    /*FIN ESTILO SECCION 5*/
+    /*ESTILO SECCION 6*/
+    /*(010)*/
+    .suscripcion {
+        background-color: rgb(245 174 174);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: auto;
+        padding: 20px;
+    }
+
+    /*(010)*/
+    .suscripcionTexto {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    /*(010)*/
+    .suscripcionBoton {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /*FIN SECCION 6*/
+    /*FOOTER*/
+    /*(011)*/
+    .barraFooter1 ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    /*011*/
+    .barraFooter1 li {
+        margin: 0 20px;
+    }
+
+    /*(011)*/
+    .barraFooter2 ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    /*011*/
+    .barraFooter2 li {
+        margin: 0 20px;
+    }
+
+    /*(010)*/
+    .barraFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    /*FIN FOOTER*/
+}
+
+/*MEDIAQUERYS PARA ORDENADOR*/
+@media screen and (min-width:992px) {
+
+    /*ESTILO BARRA NAVEGACION*/
+    /*(010)*/
+    .headerGeneral {
+        width: 100%;
+    }
+
+    /*(010)*/
+    .botonMenu {
+        display: none;
+    }
+
+    /*(010)*/
+    .logoMain {
+        flex-basis: 30%;
+    }
+
+    /*(010)*/
+    .navGeneral {
+        position: static;
+        margin-left: 0;
+        flex-basis: 70%;
+        height: 100%;
+    }
+
+    /*(010)*/
+    .navLinks {
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        background: rgb(223 59 59);
+    }
+
+    /*(010)*/
+    .linkItem {
+        display: inline-block;
+        margin-top: 15px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    /*FIN BARRA NAVEGACION
+    /*ESTILO BANNER*/
+    /*(010)*/
+    .banner {
+        width: 100%;
+        height: 800px;
+        animation: banner 30s infinite linear alternate;
+        background-size: 100% 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*FIN BANNER*/
+    /*SECCION 1*/
+    /*(001)*/
+    footer {
+        margin-top: auto;
+    }
+
+    /*(010)*/
+    .containerSection1Cuadros {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /*(010) flex del cuadro1*/
+    .containerSection1Parte1 {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+
+    /*(010) flex del cuadro2*/
+    .containerSection1Parte2 {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    /*FIN SECCION 1*/
+    /*ESTILO SECCION 2*/
+    /*(010) espacio y flex*/
+    .containerSection2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(245 174 174);
+        padding: 40px;
+    }
+
+    .textoSection2 h2 {
+        text-align: center;
+        font-size: large;
+    }
+
+    .textoSection4 h2 {
+        text-align: start;
+        font-size: large;
+    }
+
+    .textoSection2 p {
+        text-align: end;
+        font-size: large;
+    }
+
+    .textoSection4 p {
+        text-align: start;
+        font-size: large;
+    }
+
+    /*(010)*/
+    .textoSection2 {
+        text-align: center;
+    }
+
+    /*010*/
+    .imagenSection2 {
+        height: auto;
+        margin: 5px;
+    }
+
+    /*011*/
+    .imagenSection2 img {
+        width: 400px;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*FIN ESTILO SECCION 2*/
+    /*ESTILO SECCION 3*/
+    .containerSection3{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 15px;
+    }
+    .section3Card img{
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+    }
+    .section3CardContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .section3Card{
+        text-align: center;
+        display: inline-block;
+        padding: 20px;
+      }
+      .section3Card p{
+        word-wrap: normal;
+        white-space: normal;
+      }
+    /*FIN ESTILO SECCION 3*/    
+    /*ESTILO SECCION 4*/
+    .containerSection4 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(245 174 174);
+        padding: 40px;
+    }
+    .containerSection4 h2{
+        text-align: center;
+    }
+    /*(010)*/
+    .textoSection4 {
+        text-align: center;
+        margin: 15px;
+    }
+
+    /*010*/
+    .imagenSection4 {
+        height: auto;
+        margin: 15px;
+    }
+
+    /*011*/
+    .imagenSection4 img {
+        width: 400px;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*ESTILO SECCION 5*/
+    .containerSection5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .seccion5Imagenes {
+        margin: 15px;
+    }
+
+    .seccion5Info {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+    }
+
+    /*FIN ESTILO SECCION 5*/
+    /*ESTILO SECCION 6*/
+    /*(010)*/
+    .suscripcion {
+        background-color: rgb(245 174 174);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: auto;
+        padding: 37px;
+    }
+
+    /*(010)*/
+    .suscripcionTexto {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    /*(010)*/
+    .suscripcionBoton {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /*FIN SECCION 6*/
+    /*FOOTER*/
+    /*(011)*/
+    .barraFooter1 ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    /*(011)*/
+    .barraFooter1 li {
+        margin: 0 50px;
+    }
+
+    /*(011)*/
+    .barraFooter2 ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    /*(011)*/
+    .barraFooter2 li {
+        margin: 0 50px;
+    }
+
+    /*(010)*/
+    .barraFooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /*FIN FOOTER*/
+}

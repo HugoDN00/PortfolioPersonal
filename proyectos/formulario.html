@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <link rel="stylesheet" href="./formulario.css" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <section>
+      <h1>Formulario de contacto</h1>
+      <form method="post">
+        <div class="div1">
+          <div class="contenedor" id="conNombre">
+            <div class="coses">
+              <label for="fname">Nombre</label>
+              <input type="text" id="fname" name="fname" class="barra" />
+            </div>
+            <div class="coses">
+              <label for="lname">Apellidos</label>
+              <input type="text" id="lname" name="lname" class="barra" />
+            </div>
+            <div class="coses">
+              <label for="ntelefono">Telefono</label>
+              <input type="tel" class="barra" id="ntelefono" name="ntelefono" />
+            </div>
+            <div class="coses">
+              <label for="correo">Correo</label>
+              <input type="email" id="correo" name="correo" class="barra" />
+            </div>
+          </div>
+          <div class="contenedor" id="conFav">
+            <h2>¿Cual ha sido su proyecto favorito?</h2>
+            <div class="contProyDec">
+              <label for="radio-fps">Horario</label>
+              <input type="radio" id="radio-fps" name="juegos" value="fps" />
+            </div>
+            <div class="contProyDec">
+              <label for="radio-plataformas">Sistema solar</label>
+              <input
+                type="radio"
+                id="radio-plataformas"
+                name="juegos"
+                value="plataformas"
+              />
+            </div>
+            <div class="contProyDec">
+              <label for="radio-deportes">Pokecartas</label>
+              <input
+                type="radio"
+                id="radio-deportes"
+                name="juegos"
+                value="deportes"
+              />
+            </div>
+            <div class="contProyDec">
+              <label for="radio-peru">Peru</label>
+              <input
+                type="radio"
+                id="radio-carreras"
+                name="juegos"
+                value="carreras"
+              />
+            </div>
+            <div class="contProyDec">
+              <label for="radio-neo">Neoplasicismo</label>
+              <input type="radio" id="radio-peru" name="juegos" value="peru" />
+            </div>
+            <div class="contProyDec">
+              <label for="radio-carreras">Receta</label>
+              <input type="radio" id="radio-neo" name="juegos" value="neo" />
+            </div>
+          </div>
+        </div>
+        <div class="div1" id="div2">
+          <div id="selecciona">
+            <label for="select"
+              >Selecciona sobre que desea usted comunicarse</label
+            >
+            <select id="jueguitos" name="jueguitos">
+              <option value="plataformas">Informacion sobre proyectos</option>
+              <option value="deportes">Preguntas</option>
+              <option value="carreras">Opinion</option>
+            </select>
+          </div>
+          <div id="comentarios">
+            <label for="opinion">Escriba aqui sus comentarios:</label>
+            <textarea name="opinion" id="opinion" cols="40" rows="5"></textarea>
+          </div>
+        </div>
+        <button id="botonForm" type="button">Enviar formulario</button>
+      </form>
+    </section>
+  </body>
+</html>

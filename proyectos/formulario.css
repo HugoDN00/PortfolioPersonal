@@ -1,0 +1,177 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(54, 50, 50);
+}
+h1{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    color: white;
+}
+h2{
+    font-size: 16px;
+    color: white;
+    margin-bottom: 16px;
+}
+label{
+    color: white;
+}
+section{
+    text-align: center;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#conNombre{
+    align-items: center;
+}
+#conFav{
+    padding-bottom: 5%;
+    padding-top: 5%;
+    align-items: center;
+}
+option{
+    background-color: rgb(50, 103, 177);
+    color: rgb(0, 0, 0);
+}
+#opinion{
+    padding: 5%;
+    margin-top: 5%;
+}
+#botonForm {
+    width: 135px;
+    height: 45px;
+    border: rgb(43, 72, 168) 4px solid;
+    border-radius: 10px;
+    margin: 5px;
+    color: white;
+}
+#botonForm {
+    background-color: rgb(0, 0, 0);
+}
+
+#botonForm:hover {
+    background-color: transparent;
+    border: black 2px solid;
+
+}
+.barra{
+    width: 150px;
+}
+.coses{
+    width: 260px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form{
+    padding: 1%;
+}
+.contProyDec{
+    width: 150px;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#selecciona label{
+    font-size: 24px;
+}
+#selecciona{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    height: 100px;
+}
+#comentarios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    padding: 2%;
+}
+textarea{
+    resize: none;
+    border: black 4px solid;
+    padding: 1%;
+    border-radius: 16px;
+    height: 150px;
+    width: 250px;
+}
+#jueguitos{
+    border: black 2px solid;
+    border-radius: 16px;
+    height: 30px;
+    width: 240px;
+    text-align: center;
+}
+/*TABLET*/
+@media screen and (min-width:600px) and (max-width:900px) {
+   .div1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+   }
+   #div2{
+    flex-direction: column;
+   }
+   #jueguitos{
+        height: 60px;
+        width: 320px;
+        font-size: 18px;
+    }
+    textarea{
+        height: 250px;
+        width: 450px;
+    }
+    #comentarios label{
+        font-size: 24px;
+    }
+    #botonForm{
+        height: 80px;
+        width: 220px;
+        font-size: 18px;
+    }
+}
+/*DESKTOP*/
+@media screen and (min-width:901px){
+    .div1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+   }
+   #jueguitos{
+        height: 60px;
+        width: 320px;
+        font-size: 18px;
+    }
+    textarea{
+        height: 250px;
+        width: 450px;
+    }
+    #comentarios label{
+        font-size: 24px;
+    }
+    #botonForm{
+        height: 80px;
+        width: 220px;
+        font-size: 18px;
+    }
+    #selecciona{
+        height: 140px;
+    }
+    h2{
+        font-size: 16px;
+    }
+}

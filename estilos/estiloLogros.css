@@ -1,0 +1,89 @@
+.contenedorLogros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+.contenedorLogros span{
+    color: white;
+}
+#contenedorLogrosNagoya{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+}
+#contenedorLogrosEspaña{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+}
+.cartaLogro{
+    background-color: rgb(43, 72, 168);
+    border: black 8px solid;
+    border-radius: 20px;
+    padding: 4px;
+    width: 250px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.cabeceraLogro{
+    padding: 4px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.fotoLogro{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: black 8px solid;
+    background-color: black;
+}
+.infoLogro{
+    width: 100%;
+    padding: 8px;
+}
+.contenedorLogros p{
+    color: white;
+    margin: 16px;
+}
+/*TABLET*/
+@media screen and (min-width:600px) and (max-width:900px) {
+    #contenedorLogrosNagoya{
+        flex-direction: row;
+    }
+    #contenedorLogrosEspaña{
+        flex-direction: row;
+    }
+}
+/*DESKTOP*/
+@media screen and (min-width:901px){
+    #contenedorLogrosNagoya{
+        flex-direction: row;
+    }
+    #contenedorLogrosEspaña{
+        flex-direction: row;
+    }
+    .contenedorLogros{
+        flex-direction: row;
+    }
+    .fotoLogro{
+        width: 100px;
+        height: 120px;
+    }
+    .cartaLogro{
+        width: 140px;
+    }
+}

@@ -1,0 +1,142 @@
+@keyframes giroPlataforma {
+    from{transform: rotate(0deg) translate(0px) rotate(-360deg);}
+    to{transform: rotate(360deg) translate(0px) rotate(-360deg);}
+}
+@keyframes giroHabilidad {
+    from{transform: rotate(0deg) translate(0px) rotate(-360deg);}
+    to{transform: rotate(-360deg) translate(0px) rotate(-360deg);}
+}
+
+.contenedorHabilidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: rgb(15, 58, 199) 8px solid;
+    border-radius: 50%;
+}
+#contenedorCircularHabilidades{
+    height: 380px;
+    width: 380px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    animation-duration: 20s;
+    animation-name: giroPlataforma;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.imagenH{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+#habilidadesTexto{
+    font-style: oblique;
+    color: white;
+}
+#contenedorH2{
+    position: absolute;
+    border-radius: 50%;
+    border: rgb(15, 58, 199) 8px solid;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(54, 50, 50);
+}
+.habilidadAUX{
+    height: 400px;
+    width: 400px;
+    background-color: transparent;
+}
+#h1{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    
+}
+#h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60%;
+}
+#h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+   
+}
+.habilidad{
+    margin: 8px;
+    animation-duration: 20s;
+    animation-name: giroHabilidad;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#Java{
+    align-self: flex-start;
+}
+#PHP{
+   align-self: flex-end; 
+}
+.contenedorHabilidades h4{
+    color: white;
+}
+/*TABLET*/
+@media screen and (min-width:600px) and (max-width:900px) {
+    #contenedorCircularHabilidades{
+        height: 500px;
+        width: 500px;
+    }
+    .imagenH{
+        width: 60px;
+        height: 60px;
+    }
+    #h2{
+        width: 95%;
+    }
+}
+/*DESKTOP*/
+@media screen and (min-width:901px){
+    #contenedorCircularHabilidades{
+        height: 700px;
+        width: 700px;
+    }
+    .habilidadAUX{
+        height: 100%;
+        width: 100%;
+    }
+    #h2{
+        height: 85%;
+    }
+    .imagenH{
+        width: 70px;
+        height: 70px;
+    }
+    #PHP{
+        align-self: center;
+    } 
+    #Java{
+        align-self: center;
+    }
+    #contenedorH2{
+        height: 300px;
+        width: 300px;
+    }
+    #habilidadesTexto{
+        font-size:42px;
+    }
+}
+

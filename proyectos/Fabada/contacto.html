@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./estilo.css" rel="stylesheet" type="text/css" />
+    <title>Fabada.html</title>
+  </head>
+  <body>
+    <h1>Formulario de contacto</h1>
+    <ul>
+      <li>
+        <a href="./pasos.html">Pasos para cocinar esta deliciosa fabada</a>
+      </li>
+      <li><a href="./ingredientes.html">Ingredientes</a></li>
+      <li><a href="./index.html">Volver a inicio</a></li>
+    </ul>
+    <hr />
+    <form method="post">
+      <label for="fname">Nombre</label>
+      <br />
+      <input type="text" name="fname" id="fname" placeholder="Dime tu nombre" />
+      <br /><br />
+      <label for="lname">Apellidos</label>
+      <br />
+      <input
+        type="text"
+        name="lname"
+        id="lname"
+        placeholder="Dime el apellido"
+      />
+      <br /><br />
+      <label for="email">Email</label>
+      <br />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="ejemplo@email.terminacion"
+      />
+      <br /><br />
+      <label for="select">Selecciona lo que quiera hacer</label>
+      <select name="sopciones" id="sopciones">
+        <option value="consulta">Consulta</option>
+        <option value="sugerencia">Sugerencia</option>
+        <option value="correccion">Correccion</option>
+      </select>
+      <br /><br />
+      <label for="opinion">Esribe un comentario</label>
+      <br />
+      <textarea name="opinion" id="opinion" cols="40" rows="5"></textarea>
+      <br /><br />
+      <input type="radio" id="radio-aceptar" name="aceptar" value="aceptar" />
+      <label for="radio-aceptar">Aceptar politica de privacidad</label>
+      <br /><br />
+      <button type="button">Enviar formulario</button>
+    </form>
+  </body>
+</html>

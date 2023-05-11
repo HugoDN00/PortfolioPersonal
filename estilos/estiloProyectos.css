@@ -1,0 +1,47 @@
+.contenedorProyectos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;  
+    text-align: center;
+}
+.proyectosImagenes{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    overflow: auto;
+}
+.contenedorImgProyecto{
+    margin: 15px;
+    background-color: rgb(43, 72, 168);
+    border: black 4px solid;
+    border-radius: 20px;
+    padding: 8px;
+}
+.imgLogro{
+    width: 350px;
+    height: 250px;
+    border: black 4px solid;
+    background-color: black;
+}
+.contenedorProyectos *{
+    color: white;
+}
+/*DESKTOP*/
+@media screen and (min-width:901px){
+    .proyectosImagenes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        width: 100%;
+        overflow: hidden;
+    }
+    .contenedorImgProyecto{
+        width: 85%;
+    }
+    .imgLogro{
+        width: 85%;
+    }
+}
