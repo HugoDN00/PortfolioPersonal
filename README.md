@@ -19,6 +19,8 @@ Tras decidir la información que se iba a implementar, costo mucho elegir una pa
   - Color primario : Gris
   - Color secunadrio : Negro
   - Color terciario : rgb(43, 72, 168)[Azul]
+- **Fuente**
+  - Arial, Helvetica, sans-serif
 
 ## Implementación
 
